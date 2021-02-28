@@ -14,12 +14,13 @@ public class BeneficiarioDTO implements Serializable {
 	private BigDecimal saldoAposentadoria;
 	private BigDecimal valorAporte;
 	private Integer qtdAnosRecebimentoAposentadoria;	
+	private BigDecimal valorMensal;
 		
 	public BeneficiarioDTO() {
 		
 	}
 	
-	public BeneficiarioDTO(Long id, String nome, String cpf, String email, BigDecimal saldoAposentadoria, BigDecimal valorAporte, Integer qtdAnosRecebimentoAposentadoria) {
+	public BeneficiarioDTO(Long id, String nome, String cpf, String email, BigDecimal saldoAposentadoria, BigDecimal valorAporte, Integer qtdAnosRecebimentoAposentadoria, BigDecimal valorMensal) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -85,6 +86,14 @@ public class BeneficiarioDTO implements Serializable {
 	
 	public void setQtdAnosRecebimentoAposentadoria(Integer qtdAnosRecebimentoAposentadoria) {
 		this.qtdAnosRecebimentoAposentadoria = qtdAnosRecebimentoAposentadoria;
+	}
+	
+	public BigDecimal getValorMensal() {
+		return valorMensal;
+	}
+
+	public void setValorMensal(BigDecimal valorMensal) {
+		this.valorMensal = valorMensal;
 	}
 	
 }
