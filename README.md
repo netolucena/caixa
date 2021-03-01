@@ -7,6 +7,8 @@ Insere as informações em uma fila RabbitMQ para leitura do microserviço dos b
 Endpoint:
 
 Aportar valor (POST): ec2-3-134-107-142.us-east-2.compute.amazonaws.com:8090/caixa
+
 Exemplo de Parâmetros:
+
 valorAporte: 1000
 idBeneficiario: 1
